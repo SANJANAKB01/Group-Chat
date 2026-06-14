@@ -1,0 +1,355 @@
+body {
+    background-color: #111B21;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.navbar i {
+    font-size: 50px;
+    color: #8696A0;
+    padding: 9px;
+}
+
+.navbar a {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    color: #8696A0;
+    margin: auto;
+    text-decoration: none;
+}
+html, body {
+    overflow: hidden; /* Prevents scrollbars on the main window */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.message-screen { 
+    flex-direction: column;
+    margin-top: 20px;
+    height: 84vh;
+    background-color: #222E35;
+    width: 600px;
+    border-radius: 16px;
+    overflow-y: scroll;
+    scrollbar-color: #005c4b #222E35;
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;   
+}
+    
+    /* overflow-y: scroll;  
+    /* Enable scroll */
+    /* scrollbar-width: none;   */
+    /* Firefox */
+    /* -ms-overflow-style: none;   */ */
+
+
+ .message-screen::-webkit-scrollbar { 
+    display: none;  /*Chrome, Safari */
+}
+.message {
+    width: fit-content;
+    background-color: #005c4b;
+    color: #e9edef;
+    border-radius: 7.5px;
+    padding: 6px 7px 8px 9px;
+    margin: 2px 10px;
+    /* border: 2px solid black; */
+    max-width: 400px;
+    width: auto;
+}
+
+/* .tail-out {
+    background-color: #005c4b;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    display: block;
+    width: 8px;
+    height: 13px;
+    right: -8px;
+} */
+
+.center {
+    width: fit-content;
+    margin:8px auto;
+    padding: 5px 12px 6px;
+    text-align: center;
+    color: #8696A0;
+    border-radius: 7.5px;
+    font-size: 12.5px;
+    background-color: #182229;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.text-box {
+    width: 600px;
+    margin: 16px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222E35;
+    border-radius: 16px;
+}
+
+.text-box input {
+
+    background-color: #222E35;
+    color: #8696A0;
+    padding: 9px;
+    font-size: 16px;
+    /* height: 50px; */
+    height: 10vh;
+    width: 500px;
+    border: 0;
+    align-items: center;
+}
+
+.text-box input:focus {
+    outline: none;
+}
+
+.text-box button {
+    /* display: flex;
+    align-items: center; */
+    height: 30px;
+    width: 30px;
+    /* color: black; */
+    border: 0;
+    background-color: #222E35;
+    outline: none;
+}
+
+.send-icon {
+    /* display: flex;
+    align-items: center; */
+    font-size: 35px;
+    margin-top: 9px;
+    /* background-color: black; */
+    color: #8696A0;
+    
+}
+.upload-btn {
+    
+    color: #8696A0;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.footer {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px;
+    justify-content: center;
+    align-items: center;
+    color: #8696A0;
+}
+
+.footer a {
+    color: #8696A0;
+}
+
+.socials {
+    margin: 10px;
+}
+
+.socials i {
+    font-size: 32px;
+    margin: 15px;
+}
+
+.linkedin:hover {
+    color: #04669A;
+    transition: 0.5s;
+    transform: scale(1.5);
+    background-color: white;
+}
+
+.github:hover {
+    transform: scale(1.5);
+    color: #202020;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.insta:hover {
+    transform: scale(1.5);
+    color: pink;
+    transition: 0.5s;
+}
+
+.email:hover {
+    transform: scale(1.5);
+    color: white;
+    transition: 0.5s;
+}
+/* File Upload UI */
+.file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    background-color: #0b5ed7;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.file-preview {
+    margin: 10px;
+    color: #8696A0;
+    font-size: 14px;
+}
+
+/* Shared File Message Style */
+.file-message {
+    max-width: 400px;
+    word-wrap: break-word;
+    padding: 6px 7px 8px 9px;
+    margin: 2px 10px;
+    background-color: #005c4b;
+    color: #e9edef;
+    border-radius: 7.5px;
+}
+
+.file-message a {
+    color: #aadbe8;
+    text-decoration: underline;
+}
+
+.file-message img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.file-message video {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.file-message audio {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.file-message iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.file-message .file-name {
+    font-size: 12px;
+    color: #8696A0;
+    margin-top: 5px;
+}
+.file-message .file-size {
+    font-size: 12px;
+    color: #8696A0;
+    margin-top: 5px;
+}
+.file-message .file-type {
+    font-size: 12px;
+    color: #8696A0;
+    margin-top: 5px;
+}
+.file-message .file-uploaded-by {
+    font-size: 12px;
+    color: #8696A0;
+    margin-top: 5px;
+}
+.file-message .file-uploaded-at {
+    font-size: 12px;
+    color: #8696A0;
+    margin-top: 5px;
+}
+.file-message .file-download-link {
+    font-size: 12px;
+    color: #0b5ed7;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+.file-message .file-download-link:hover {
+    color: #0056b3;
+}
+.file-message .file-download-link:active {
+    color: #003d80;
+}
+.file-message .file-download-link:focus {
+    outline: none;
+}
+.file-message .file-download-link:focus-visible {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+.file-message .file-download-link:focus-visible:hover {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+.file-message .file-download-link:focus-visible:active {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+.file-message .file-download-link:focus-visible:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}   
+
+
+@media screen and (max-width:768px) {
+    .message-screen {
+        width: 500px;
+    }
+
+    .text-box {
+        width: 500px;
+    }
+
+    .text-box input {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .message-screen {
+        width: 350px;
+    }
+
+    .text-box {
+        width: 350px;
+    }
+
+    .text-box input {
+        width: 250px;
+    }
+}
